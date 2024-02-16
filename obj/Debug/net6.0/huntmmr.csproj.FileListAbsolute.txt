@@ -1,0 +1,15 @@
+K:\omiaProjekteja\huntmmr\obj\Debug\net6.0\huntmmr.csproj.AssemblyReference.cache
+K:\omiaProjekteja\huntmmr\obj\Debug\net6.0\huntmmr.GeneratedMSBuildEditorConfig.editorconfig
+K:\omiaProjekteja\huntmmr\obj\Debug\net6.0\huntmmr.AssemblyInfoInputs.cache
+K:\omiaProjekteja\huntmmr\obj\Debug\net6.0\huntmmr.AssemblyInfo.cs
+K:\omiaProjekteja\huntmmr\obj\Debug\net6.0\huntmmr.csproj.CoreCompileInputs.cache
+K:\omiaProjekteja\huntmmr\bin\Debug\net6.0\huntmmr.exe
+K:\omiaProjekteja\huntmmr\bin\Debug\net6.0\huntmmr.deps.json
+K:\omiaProjekteja\huntmmr\bin\Debug\net6.0\huntmmr.runtimeconfig.json
+K:\omiaProjekteja\huntmmr\bin\Debug\net6.0\huntmmr.dll
+K:\omiaProjekteja\huntmmr\bin\Debug\net6.0\huntmmr.pdb
+K:\omiaProjekteja\huntmmr\obj\Debug\net6.0\huntmmr.dll
+K:\omiaProjekteja\huntmmr\obj\Debug\net6.0\refint\huntmmr.dll
+K:\omiaProjekteja\huntmmr\obj\Debug\net6.0\huntmmr.pdb
+K:\omiaProjekteja\huntmmr\obj\Debug\net6.0\huntmmr.genruntimeconfig.cache
+K:\omiaProjekteja\huntmmr\obj\Debug\net6.0\ref\huntmmr.dll
