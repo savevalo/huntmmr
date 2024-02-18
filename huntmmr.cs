@@ -16,15 +16,19 @@ public class huntmmr
     /// 
     private static XmlDocument doc = new XmlDocument();
     private static XmlNode attribuuttiNode;
+    private static String edellinen;
     public static void Main()
     {
+        // K:\\Steam\\steamapps\\common\\Hunt Showdown\\user\\profiles\\default\\attributes.xml
         // loading the document and node
         //XmlDocument doc = new XmlDocument();
-        doc.Load("K:\\Steam\\steamapps\\common\\Hunt Showdown\\user\\profiles\\default\\attributes.xml");
+        doc.Load("user\\profiles\\default\\attributes.xml");
         attribuuttiNode = doc.SelectSingleNode("/Attributes[@Version='37']/Attr[@name='MissionBagPlayer_11_0_mmr']/@value");
+        string apu = attribuuttiNode.Value;
+        saveLast(apu);
 
         // adding a file watcher
-        using var watcher = new FileSystemWatcher("K:\\Steam\\steamapps\\common\\Hunt Showdown\\user\\profiles\\default\\");
+        using var watcher = new FileSystemWatcher("user\\profiles\\default\\");
         watcher.NotifyFilter = NotifyFilters.LastWrite;
         watcher.Changed += OnChanged;
         watcher.Filter = "attributes.xml";
@@ -53,17 +57,18 @@ public class huntmmr
         {
             return;
         }
-        if (attribuuttiNode != null)
+        if (attribuuttiNode != null && !(edellinen.Equals(attribuuttiNode.Value)))
         {
             // Tulostetaan attribuutin arvo
             string attribuutinArvo = attribuuttiNode.Value;
             Console.WriteLine("MMR pisteiden määrä: " + attribuutinArvo);
         }
-        else
-        {
-            Console.WriteLine("MMR pisteiden määrää ei löytynyt.");
-        }
+        else return;
+    }
 
+    private static void saveLast(String apu)
+    {
+        huntmmr.edellinen = apu;
     }
 
 }
